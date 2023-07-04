@@ -33,6 +33,8 @@ public class StreamDemo{
 		 //filter is taking Predicate Functional Interface as a parameter which can be used for conditional evaluation
 		 Predicate<Customer> hydPredicate = cust -> cust.getCity().equalsIgnoreCase("Noida");
 		 customerStream.filter(hydPredicate).forEach(customerConsumer);
+		 
+		 // need to do more...
 
 	}
 
