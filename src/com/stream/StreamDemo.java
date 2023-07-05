@@ -31,7 +31,7 @@ public class StreamDemo{
 		 // we need Customer who are located in Hyderabad
 		 //to achive this task we need to get for another intermediate operation as filter()
 		 //filter is taking Predicate Functional Interface as a parameter which can be used for conditional evaluation
-		 Predicate<Customer> hydPredicate = cust -> cust.getCity().equalsIgnoreCase("Noida");
+		 Predicate<Customer> hydPredicate = cust -> cust.getCity().equalsIgnoreCase("Mumbai");
 		 customerStream.filter(hydPredicate).forEach(customerConsumer);
 		 
 		 // need to do more...
